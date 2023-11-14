@@ -48,6 +48,7 @@ async function decorateTemplates(main) {
   try {
     const template = getMetadata('template');
     const templates = TEMPLATE_LIST;
+    console.log(templates)
     if (templates.includes(template)) {
       const mod = await import(`../templates/${template}/${template}.js`);
       loadCSS(`${window.hlx.codeBasePath}/templates/${template}/${template}.css`);
