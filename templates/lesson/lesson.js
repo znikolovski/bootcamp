@@ -1,5 +1,5 @@
 /**
- * @param {HTMLElement} block The header block element
+ * @param {HTMLElement} block The header block element 
  */
 export default async function decorate(block) {
   const sidebar = block.querySelector('.sidebar');
