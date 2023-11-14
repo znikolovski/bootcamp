@@ -9,6 +9,7 @@ export default async function decorate(block) {
   div.append(content);
 
   [...sidebar.children].forEach((row) => {
+    console.log(row);
     content.append(row);
   });
 
