@@ -7,7 +7,7 @@ function getMetadata(name, doc) {
 }
 
 /**
- * @param {HTMLElement} block The header block element
+ * @param {HTMLElement} block The header block element 
  */
 export default async function decorate(block) {
   const promises = [...block.children].map((div) => {
