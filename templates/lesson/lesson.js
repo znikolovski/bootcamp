@@ -14,6 +14,7 @@ export default async function decorate(block) {
 
   const ul = document.createElement('ul');
   [...content.querySelectorAll('h3')].forEach((section) => {
+    console.log(section);
     const li = document.createElement('li');
     li.innerHTML = `<a href='#${section.getAttribute('id')}'>${section.textContent}</a>`;
     ul.append(li);
